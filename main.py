@@ -95,6 +95,10 @@ class Database:
         # Program prompts user for the character's id.
         id_search = input("Please enter the id of character: ")
 
+        # Input validation.
+        while not (id_search.isdigit()):
+            id_search = input("Please enter an integer value: ")
+
         # Program prompts user for the number of columns they would like to update.
         columns = input("Please enter the number of you columns would like to update: ")
 
@@ -103,7 +107,7 @@ class Database:
             input("Please make sure the number you entered is between 1 and 5, please try again: ")
         
         # Input validation.
-        while not (1 <= int(columns) <= 4):
+        while not (int(columns) <= 4):
             input("Please make sure the number you entered is between 1 and 5, please try again: ")
 
         # For each row that user wants to update...
@@ -112,11 +116,10 @@ class Database:
             print(f"Column #{column} out of {columns}")
             
             # Prompts user to enter which column to update.
-            column_name = input("Please enter name of column to update: ")
-            print(f"Item found at {names.index(column_name)}")
+            column_name = input("Please enter name of column to update, please note that the naming convention is upper-camel-casing [Ex: EnglishName]: ").upper()
 
             # If the column name the user entered is not in the list, they can get another chance to enter a valid column name.
-            while (column_name not in [i for i in names]):
+            while (column_name not in [i.upper() for i in names]):
                 print("A valid column was not entered, please try again...")
                 column_name = input("Please enter name of column to update: ")
 
@@ -132,6 +135,12 @@ class Database:
             else:
                 # SQL Command.
                 cur.execute(f"UPDATE usercharacters.Characters SET {column_name} =  {data} WHERE CharacterID = {id_search}") 
+
+            # Makes changes to the actual database.
+            connect.commit()
+
+            # Lets user know that their changes have been made.
+            print("All changes have been made to the database! ✅")
 
     def delete(self):
         return
