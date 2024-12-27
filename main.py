@@ -116,7 +116,7 @@ class Database:
             print(f"Column #{column} out of {columns}")
             
             # Prompts user to enter which column to update.
-            column_name = input("Please enter name of column to update, please note that the naming convention is upper-camel-casing [Ex: EnglishName]: ").upper()
+            column_name = input("Please enter name of column to update").upper()
 
             # If the column name the user entered is not in the list, they can get another chance to enter a valid column name.
             while (column_name not in [i.upper() for i in names]):
