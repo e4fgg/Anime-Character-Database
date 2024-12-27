@@ -57,4 +57,14 @@ class Database:
         connect.close()
         cur.close()
 
+    # The method that allows user to view all records in the database.
+    def view(self):
+        cur.execute("SELECT * FROM usercharacters.Characters;") # Selecting all records to view.
+
+        print(cur.fetchall()) # Printing all the records.
+
+        # Closing database and cursor.
+        connect.close()
+        cur.close()
+
 
