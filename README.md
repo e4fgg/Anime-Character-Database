@@ -28,11 +28,10 @@ connect = psycopg2.connect(
     host = "your_servers_host"
 )
 ```
-
-
 # Resources ⭐️⭐️⭐️⭐️
 > [!NOTE]  
 > I have provided both a paid and free option that allows you to select and query data from a Postgres SQL Server, take into consideration your operating system, for reference, I use MacOS and DBeaver suffices.
+- IDE With Python Interpreter: https://code.visualstudio.com
 - Postgres SQL Server Download Link: https://www.postgresql.org/download/
 - DataGrip (Paid) - https://www.jetbrains.com/datagrip/
 - DBeaver Community (Free) - https://dbeaver.io
