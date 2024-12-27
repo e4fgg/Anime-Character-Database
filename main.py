@@ -132,3 +132,10 @@ def menu():
 
     # Printing the name of the program.
     print("Anime Character Database")
+
+    # Formatting a menu.
+    print("1. Add a character")
+    print("2. View all characters")
+    print("3. Search for a character")
+    print("4. Update a character's information")
+    print("5. Delete a character")
