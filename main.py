@@ -120,3 +120,7 @@ class Database:
             # If there is a value error, the user will be made aware of it.
             except ValueError:
                 print("Please check the datatypes before updating data.")
+
+
+    def delete(self):
+        return
