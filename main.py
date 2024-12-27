@@ -12,6 +12,7 @@ import psycopg2
 #                           #
 #############################
 
+
 # Database was already created in another file named create.sql that is in this repository.
 # Opening a cursor.
 cur = connect.cursor()
@@ -104,11 +105,11 @@ class Database:
 
         # Input validation.
         while not (columns.isdigit()):
-            input("Please make sure the number you entered is between 1 and 5, please try again: ")
+            columns = input("Please make sure the number you entered is between 1 and 5, please try again: ")
         
         # Input validation.
         while not (int(columns) <= 4):
-            input("Please make sure the number you entered is between 1 and 5, please try again: ")
+            columns = input("Please make sure the number you entered is between 1 and 5, please try again: ")
 
         # For each row that user wants to update...
         for column in range(1, int(columns) + 1):
