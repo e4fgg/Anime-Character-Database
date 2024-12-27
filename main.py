@@ -159,3 +159,6 @@ def menu():
 
     elif (int(user) == 2):
         db.view() # Calling the view method from database class.
+
+    else:
+        db.insert() # Calling the insert method from database class.
