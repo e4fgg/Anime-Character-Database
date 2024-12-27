@@ -98,3 +98,11 @@ class Database:
         for column in int(columns):
             # Formatting/Keeping count.
             print(f"Column #{column} out of {columns}")
+
+            # Prompts user to enter which column to update.
+            column_name = input("Please enter name of row to update: ")
+
+            # Prompts user to enter new data.
+            data = input("Please enter updated data: ")
+
+            
