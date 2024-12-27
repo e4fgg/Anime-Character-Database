@@ -20,3 +20,10 @@ cur = connect.cursor()
 class Database:
     def __init__(self):
         pass
+
+    # Defining a method that will make it possible to insert data into database.
+    def insert(self):
+        # Asks users for how many records (rows) they would like to contribute to.
+        records = int(input("How many rows would you like to insert: "))
+
+        
