@@ -8,9 +8,14 @@ A python project that allows the user to connect to a Postgres SQL Server and gi
 
 # How do you run this program? ⭐️⭐️
 - Clone repository and run it in your python interpreter.
-- Install the required libraries from requirements.txt using the following command:
-`pip install -r requirements.txt`
+- Install the required libraries from requirements.txt by running
+`pip install -r requirements.txt` in your command-line.
 - To run this program, you're going to have to download an sql server.
+
+# Resources ⭐️⭐️⭐️
+- Postgres SQL Server Download Link: https://www.postgresql.org/download/
+- DataGrip (Paid) - https://www.jetbrains.com/datagrip/
+- DBeaver Community (Free) - https://dbeaver.io
 
 
 
