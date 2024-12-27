@@ -139,3 +139,10 @@ def menu():
     print("3. Search for a character")
     print("4. Update a character's information")
     print("5. Delete a character")
+
+    # Prompting the user the enter an option.
+    user = input("Please enter a choice: ")
+
+    # Input validation.
+    while not (int(user) <= 5 and user.isdigit()):
+        user = input("Please enter a choice that is in the appropriate range: ")
