@@ -15,3 +15,8 @@ import psycopg2
 # Database was already created in another file named create.sql that is in this repository.
 # Opening a cursor.
 cur = connect.cursor()
+
+# Class that will store methods.
+class Database:
+    def __init__(self):
+        pass
