@@ -52,3 +52,9 @@ class Database:
 
             # Lets user know that the changes migrated to the database.
             print("All changes have been made to the database! ✅")
+
+        # Closing database and cursor.
+        connect.close()
+        cur.close()
+
+
