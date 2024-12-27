@@ -7,7 +7,9 @@ A python project that allows the user to connect to a Postgres SQL Server and gi
 - Delete a specified record.
 
 # How do you run this program? ⭐️⭐️
-- Clone repository and run it in your python interpreter.
+> [!IMPORTANT]  
+> For these steps to go smoothly, you will need install both Python and Git.
+- Clone repository and run it in your python interpreter by running `git clone https://github.com/e4fgg/Anime-Character-Database`
 - Install the required libraries from requirements.txt by running
 `pip install -r requirements.txt` in your command-line.
 - To run this program, you're going to have to download an sql server.
