@@ -13,6 +13,8 @@ A python project that allows the user to connect to a Postgres SQL Server and gi
 - To run this program, you're going to have to download an sql server.
 
 # Resources ⭐️⭐️⭐️
+> [!NOTE]  
+> I have provided both a paid and free option that allows you to select and query data from SQL Server, take into consideration your operating system, for reference, I use MacOS and DBeaver suffices.
 - Postgres SQL Server Download Link: https://www.postgresql.org/download/
 - DataGrip (Paid) - https://www.jetbrains.com/datagrip/
 - DBeaver Community (Free) - https://dbeaver.io
