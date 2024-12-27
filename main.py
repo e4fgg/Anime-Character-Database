@@ -89,3 +89,12 @@ class Database:
 
         # Program prompts user for the number of columns they would like to update.
         columns = input("Please enter the number of you would like to update: ")
+
+        # Input validation.
+        while not (columns <= 5 and columns.isdigit()):
+            input("Please make sure the number you entered is between 1 and 5, please try again: ")
+
+        # For each row that user wants to update...
+        for column in int(columns):
+            # Formatting/Keeping count.
+            print(f"Column #{column} out of {columns}")
