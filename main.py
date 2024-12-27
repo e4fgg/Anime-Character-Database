@@ -114,3 +114,9 @@ class Database:
 
                 # If the data is not a digit, the data will not be in quotation marks 
                 else:
+                    # SQL Command.
+                    cur.execute(f"UPDATE usercharacters.Characters SET {column_name} =  {data}") 
+
+            # If there is a value error, the user will be made aware of it.
+            except ValueError:
+                print("Please check the datatypes before updating data.")
