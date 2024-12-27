@@ -8,5 +8,9 @@ A python project that allows the user to connect to a Postgres SQL Server and gi
 
 # How do you run this program? ⭐️⭐️
 - Clone repository and run it in your python interpreter.
+- Install the required libraries from requirements.txt using the following command:
+`pip install -r requirements.txt`
+- To run this program, you're going to have to download an sql server.
+
 
 
