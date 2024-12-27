@@ -16,6 +16,14 @@ A python project that allows the user to connect to a Postgres SQL Server and gi
 > [!IMPORTANT]  
 > Make sure you have an SQL Server installed, if you don't, look below at the Resources section and download one from there.
 - Sample Code: 
+```python
+connect = psycopg2.connect(
+    database = "dbname",
+    user = "your_server_user",
+    password = "your_server_password",
+    host = "your_servers_host"
+)
+```
 
 
 # Resources ⭐️⭐️⭐️⭐️
