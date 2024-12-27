@@ -146,3 +146,10 @@ def menu():
     # Input validation.
     while not (int(user) <= 5 and user.isdigit()):
         user = input("Please enter a choice that is in the appropriate range: ")
+
+    # The different cases and the different methods that will be called.
+    if (int(user) == 5):
+        db.delete() # Calling the delete method from database class.
+
+    elif (int(user) == 4):
+        db.update() # Calling the update method from database class.
