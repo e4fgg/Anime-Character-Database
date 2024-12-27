@@ -26,4 +26,10 @@ class Database:
         # Asks users for how many records (rows) they would like to contribute to.
         records = int(input("How many rows would you like to insert: "))
 
-        
+        # For each of the numbers that the user entered for the records variable, it will loop.
+        for record in records:
+            # Keeping count.
+            print(f"Row #{record} out of {records}:")
+
+            # Prompts user to enter character's English name.
+            eng_name = input("Please enter character's English name: ")
