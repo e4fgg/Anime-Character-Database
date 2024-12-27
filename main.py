@@ -39,3 +39,16 @@ class Database:
 
             # Prompts user to enter character's birthday.
             birthday = input("Please enter character's birthday: ")
+
+            # Prompts user to enter the anime that the character is in.
+            anime = input("Please enter the anime this character is in: ")
+
+            # Executes the INSERT Statement.
+            cur.execute("INSERT INTO usercharacters.characters (EnglishName, JapaneseName, Birthday, Anime) VALUES (%s, %s, %s, %s)",
+            (eng_name, japa_name, birthday, anime)) # The values that the user entered will be added into the database, the ID is auto-generated.
+
+            # Makes changes to the actual database.
+            connect.commit()
+
+            # Lets user know that the changes migrated to the database.
+            print("All changes have been made to the database! ✅")
