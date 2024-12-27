@@ -124,3 +124,11 @@ class Database:
 
     def delete(self):
         return
+    
+# Created a module that displays a menu and based on what the user picks, it will determine what module is called.
+def menu():
+    # Variable is equal to Database class.
+    db = Database()
+
+    # Printing the name of the program.
+    print("Anime Character Database")
