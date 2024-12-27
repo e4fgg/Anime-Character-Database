@@ -153,3 +153,9 @@ def menu():
 
     elif (int(user) == 4):
         db.update() # Calling the update method from database class.
+
+    elif (int(user) == 3):
+        db.search() # Calling the search method from database class.
+
+    elif (int(user) == 2):
+        db.view() # Calling the view method from database class.
