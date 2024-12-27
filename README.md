@@ -1,10 +1,10 @@
 # Anime Character Database ⭐️
 A python project that allows the user to connect to a Postgres SQL Server and gives users the option to:
-1. Add a character to the database
-2. View all records in the database.
-3. Select a certain record.
-4. Update a specified record.
-5. Delete a specified record.
+- Add a character to the database
+- View all records in the database.
+- Select a certain record.
+- Update a specified record.
+- Delete a specified record.
 
 # How do you run this program? ⭐️⭐️
 - Clone repository and run it in your python interpreter.
@@ -12,7 +12,13 @@ A python project that allows the user to connect to a Postgres SQL Server and gi
 `pip install -r requirements.txt` in your command-line.
 - To run this program, you're going to have to download an sql server.
 
-# Resources ⭐️⭐️⭐️
+# How do you log into an SQL Server from Python? ⭐️⭐️⭐️
+> [!IMPORTANT]  
+> Make sure you have an SQL Server installed, if you don't, look below at the Resources section and download one from there.
+- Sample Code: 
+
+
+# Resources ⭐️⭐️⭐️⭐️
 > [!NOTE]  
 > I have provided both a paid and free option that allows you to select and query data from a Postgres SQL Server, take into consideration your operating system, for reference, I use MacOS and DBeaver suffices.
 - Postgres SQL Server Download Link: https://www.postgresql.org/download/
