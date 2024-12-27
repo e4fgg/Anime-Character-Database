@@ -33,3 +33,9 @@ class Database:
 
             # Prompts user to enter character's English name.
             eng_name = input("Please enter character's English name: ")
+
+            # Prompts user to enter character's Japanese name.
+            japa_name = input("Please enter character's Japanese name: ")
+
+            # Prompts user to enter character's birthday.
+            birthday = input("Please enter character's birthday: ")
