@@ -82,3 +82,10 @@ class Database:
         connect.close()
         cur.close()
 
+    # Method that allows user to update data about a character.
+    def update(self):
+        # Program prompts user for the character's id.
+        id_search = input("Please enter the id of character: ")
+
+        # Program prompts user for the number of columns they would like to update.
+        columns = input("Please enter the number of you would like to update: ")
