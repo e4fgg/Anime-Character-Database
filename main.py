@@ -105,4 +105,12 @@ class Database:
             # Prompts user to enter new data.
             data = input("Please enter updated data: ")
 
-            
+            # Error handling.
+            try:
+                # If the data is not a digit, it will be entered with quotation marks.
+                if not (data.isdigit()):
+                    # SQL Command.
+                    cur.execute(f"UPDATE usercharacters.Characters SET {column_name} =  '{data}'")
+
+                # If the data is not a digit, the data will not be in quotation marks 
+                else:
