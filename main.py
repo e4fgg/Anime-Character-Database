@@ -4,10 +4,14 @@
 # main.py
 
 # Importing the module that connects the Postgres SQL Server to Python.
-
+import psycopg2
 
 #############################
 #                           #
 #      SERVER DETAILS       #
 #                           #
 #############################
+
+# Database was already created in another file named create.sql that is in this repository.
+# Opening a cursor.
+cur = connect.cursor()
