@@ -78,5 +78,7 @@ class Database:
         # Printing the results.
         print(cur.fetchall())
 
-        
+        # Closing database and cursor.
+        connect.close()
+        cur.close()
 
