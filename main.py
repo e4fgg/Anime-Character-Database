@@ -67,4 +67,15 @@ class Database:
         connect.close()
         cur.close()
 
+    # Method that allows user to search for a certain character based on character's name.
+    def search(self):
+        # Program prompts user for the character's id.
+        user_search = input("Please enter the id of character: ")
+
+        # SQL Command.
+        cur.execute(f"SELECT * FROM usercharacters.Characters WHERE CharacterID = {user_search}")
+
+        # Printing the results.
+        print(cur.fetchall())
+
 
