@@ -162,3 +162,7 @@ def menu():
 
     else:
         db.insert() # Calling the insert method from database class.
+
+# Calling the menu module that is using methods from the database class.
+if __name__ == "__main__":
+    menu()
