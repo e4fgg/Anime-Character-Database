@@ -18,7 +18,7 @@ import psycopg2
 cur = connect.cursor()
 
 # Overall number of records.
-record_num = 1
+record_num = 0
 
 # Class that will store methods.
 class Database:
