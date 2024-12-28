@@ -33,7 +33,7 @@ class Database:
         # For each of the numbers that the user entered for the records variable, it will loop.
         for record in range(1,records+1):
             # Keeping count.
-            print(f"Row #{record} out of {records}:")
+            print(f"Row {record} out of {records}:")
 
             # Prompts user to enter character's English name.
             eng_name = input("Please enter character's English name: ")
