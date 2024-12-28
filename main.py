@@ -17,9 +17,6 @@ import psycopg2
 # Opening a cursor.
 cur = connect.cursor()
 
-# Overall number of records.
-record_num = 0
-
 # Class that will store methods.
 class Database:
     def __init__(self):
@@ -27,6 +24,9 @@ class Database:
 
     # Defining a method that will make it possible to insert data into database.
     def insert(self):
+        # Overall number of records.
+        record_num = 0
+        
         # Asks users for how many records (rows) they would like to contribute to.
         records = int(input("How many rows would you like to insert: "))
 
