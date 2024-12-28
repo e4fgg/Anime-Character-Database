@@ -31,7 +31,7 @@ class Database:
         records = int(input("How many rows would you like to insert: "))
 
         # For each of the numbers that the user entered for the records variable, it will loop.
-        for record in range(1,records):
+        for record in range(1,records+1):
             # Keeping count.
             print(f"Row #{record} out of {records}:")
 
