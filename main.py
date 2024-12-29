@@ -12,7 +12,6 @@ import psycopg2
 #                           #
 #############################
 
-
 # Database was already created in another file named create.sql that is in this repository.
 # Opening a cursor.
 cur = connect.cursor()
@@ -26,12 +25,16 @@ class Database:
     def insert(self):
         # Overall number of records.
         record_num = 0
-        
+
         # Asks users for how many records (rows) they would like to contribute to.
-        records = int(input("How many rows would you like to insert: "))
+        records = input("How many rows would you like to insert: ")
+
+        # Input validation.
+        while not (records.isdigit()):
+            records = input("Make sure the value entered is an whole number, please try again: ")
 
         # For each of the numbers that the user entered for the records variable, it will loop.
-        for record in range(1,records+1):
+        for record in range(1,int(records)+1):
             # Keeping count.
             print(f"Row {record} out of {records}:")
 
@@ -105,7 +108,6 @@ class Database:
 
         # Program prompts user for the number of columns they would like to update.
         columns = input("Please enter the number of you columns would like to update: ")
-
 
         # Input validation.
         while not (columns.isdigit()):
@@ -199,7 +201,6 @@ def menu():
 
     else:
         db.insert() # Calling the insert method from database class.
-
 
 # Calling the menu module that is using methods from the database class.
 if __name__ == "__main__":
